@@ -1,0 +1,15 @@
+{
+    "peliculas": [
+      {
+        "titulo": "Trainspotting",
+        "categories": ["comedy", "drama"],
+        "id": 1
+      },
+      {
+        "titulo": "Cosas que hace en Denver cuando estás muerto",
+        "categories": ["thriller", "drama", "suspense"],
+        "id": 2
+      }
+
+    ]
+  }
