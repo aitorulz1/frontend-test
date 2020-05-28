@@ -26,7 +26,7 @@ body{
 .button-dark{
   width: 75%;
   padding: 15px 20px;
-  margin-top: 40%;
+  margin-top: 20%;
   color: #fff;
   font-size: 18px;
   background-color: #253648;
@@ -48,10 +48,20 @@ body{
   font-size: 14px;
 }
 
+.button-dark-categories{
+  width: 75%;
+  padding: 15px 20px;
+  margin-top: 5%;
+  color: #fff;
+  font-size: 18px;
+  background-color: #253648;
+  border-bottom: 3px solid #41f0a1;
+}
+
 .button-dark-submit{
   width: 75%;
   padding: 15px 20px;
-  margin-top: 20%;
+  margin-top: 15%;
   color: #fff;
   font-size: 18px;
   background-color: #253648;
@@ -81,4 +91,28 @@ body{
   align-items: center;
   justify-content: center;
   color: #253648;
+}
+
+.categorias-container {
+  color: #e1e1e1;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  padding: 30px 0px 0px 0px;
+  line-height: 2;
+}
+
+.categorias-input li{
+  list-style: none;
+  float: left;
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: #253648;
+  color: #fff;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 14px;
 }

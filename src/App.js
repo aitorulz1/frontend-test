@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/Header'
 import NuevaPelicula from './components/NuevaPelicula';
 import Peliculas from './components/Peliculas'
 import Categorias from './components/Categorias';
@@ -18,9 +17,8 @@ function App() {
   return (
     <Router>
       <Provider store={store}>
-        <Header />
         <Switch>
-          <Route exact path='/pelicula/nueva' component={NuevaPelicula} />
+          <Route exact path='/' component={NuevaPelicula} />
           <Route exact path='/' component={Peliculas} />
           <Route excat path='/peliculas/:categoria' component={Categorias} />
         </Switch>

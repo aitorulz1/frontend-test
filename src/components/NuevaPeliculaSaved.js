@@ -24,7 +24,7 @@ const NuevaPelicula = () => {
         updateCategories([...peliculasList, pelicula.categorias])
         guardarPelicula({
             ...pelicula,
-            categorias: ''
+            categorias : ''
         })
         console.log(peliculasList)
     }
@@ -40,16 +40,9 @@ const NuevaPelicula = () => {
         e.preventDefault();
 
         // Validar formulario
-        if(pelicula === '' || peliculasList !== 'Horror', 'horror' ||  peliculasList !== 'Comedia', 'comedia' || peliculasList !== 'Suspense', 'suspense' || peliculasList !== 'Acción', 'acción', 'Accion', 'accion' || peliculasList !== 'Romántico', 'romántico', 'Romantico', 'romantico' || peliculasList !== 'Drama', 'drama' || peliculasList !== 'Ficcion', 'ficcion', 'ficción', 'Ficción' || peliculasList !== 'Crimen', 'crimen') {
-            return;
-        }
 
         // crear la nueva película
-        agregarNuevaPelicula({
-            pelicula,
-            peliculasList
-        })
-     
+        agregarNuevaPelicula(pelicula)
     }
 
     return ( 

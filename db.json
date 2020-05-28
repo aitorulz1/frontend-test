@@ -1,15 +1,69 @@
 {
-    "peliculas": [
-      {
-        "titulo": "Trainspotting",
-        "categories": ["comedy", "drama"],
-        "id": 1
-      },
-      {
-        "titulo": "Cosas que hace en Denver cuando estás muerto",
-        "categories": ["thriller", "drama", "suspense"],
-        "id": 2
-      }
-
-    ]
-  }
+  "peliculas": [
+    {
+      "titulo": "Trainspotting",
+      "categorias": [
+        "comedy",
+        "drama"
+      ],
+      "id": 1
+    },
+    {
+      "titulo": "Cosas que hace en Denver cuando estás muerto",
+      "categorias": [
+        "thriller",
+        "drama",
+        "suspense"
+      ],
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    }
+  ]
+}
