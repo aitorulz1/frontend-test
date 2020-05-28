@@ -2,21 +2,24 @@ import React, { Fragment, useState } from 'react';
 
 const NuevaPelicula = () => {
 
-    const [ pelicula, guardarPelicula ] = useState({
-        titulo:'',
-        categorias: []
-    })
-
+    const [ pelicula, guardarPelicula ] = useState({ titulo:'', categorias: '' })
+    const [ peliculasList, updateCategories ] = useState([])
     const { titulo, categorias } = pelicula;
 
     const addCategorias = e => {
-        guardarPelicula([...pelicula, e.target.value])
+        e.preventDefault()
+        updateCategories([...peliculasList, pelicula.categorias])
+        guardarPelicula({
+            ...pelicula,
+            categorias : ''
+        })
+        console.log(peliculasList)
     }
 
     const onChange = e => {
         guardarPelicula({
             ...pelicula,
-            [e.target.name] : [e.target.value]
+            [e.target.name] : e.target.value
         })
     }
 
@@ -37,7 +40,7 @@ const NuevaPelicula = () => {
             <label>Categorías</label>
             <div className='categorias-input'>
                     <ul>
-                        {categorias.map((categoria, index) => (
+                        {peliculasList.map((categoria, index) => (
                             <li key={index}>
                                 <span>{categoria}</span>
                             </li>
@@ -52,7 +55,6 @@ const NuevaPelicula = () => {
                     onChange= {e => onChange(e)}
                 />
                 <button
-                    type='submit'
                     onClick={e => addCategorias(e)}
                     >
                         añadir categoría
